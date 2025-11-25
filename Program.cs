@@ -21,7 +21,7 @@ return await Pulumi.Deployment.RunAsync( () => {
 
     var appLabels = new InputMap<string> {
         { "app", "nginx" },
-        // { "version", "2" },
+        { "version", "2" },
     };
     
     _ = new StatefulSet( "my-stateful-set", new StatefulSetArgs {
